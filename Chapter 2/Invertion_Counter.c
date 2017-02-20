@@ -10,7 +10,7 @@ int Invertion_Counter(int *A, int start, int end){
 	return num;
 }
 
-int Merge(int *A, int start, int mid, int end){
+int Merge1(int *A, int start, int mid, int end){
 	int num = 0;
 	int l_length = mid - start +1;
 	int r_length = end - mid;

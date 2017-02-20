@@ -8,7 +8,7 @@ void Merge_Sort(int *A, int start, int end){
 	}
 }
 
-void Merge(int *A, int start, int mid, int end){		//in the comment is the solution which is without sentinel
+void Merge2(int *A, int start, int mid, int end){		//in the comment is the solution which is without sentinel
 	int l_length = mid - start +1;
 	int r_length = end - mid;
 	int left[l_length + 1];

@@ -1,5 +1,4 @@
 #include "Chapter2.h"
-
 Subarray * Find_Max_Crossing_Subarray(int *A, int low, int mid, int high)
 {
 	Subarray * max_subarray = (Subarray *)malloc(sizeof(Subarray));	
