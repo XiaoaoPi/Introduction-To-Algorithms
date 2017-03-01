@@ -15,6 +15,13 @@ typedef struct Subarray
 	int sum;
 }Subarray;
 
+typedef struct HeapHead
+{	
+	int length;
+	int head_size;
+	int * A;
+}HeapHead;
+
 /////////////////////////////
 //Declaration of Functions //
 /////////////////////////////
@@ -34,7 +41,10 @@ void Merge_Sort(int *A, int start, int end);
 void Merge2(int *A, int start, int mid, int end);
 
 void Selection_Sort(int *A, int A_length) ;
-/*Scanning_Max_Subarray.c*/
+/*Scanning_Max_Subarray*/
 Subarray * Scanning_Max_Subarray(int *A, int length);
-
+/*Heap_Sort*/
+void Max_Heapify(HeapHead *H);
+void Build_Maxheap(HeapHead *H);
+void Heap_Sort(HeapHead *H);
 #endif // CHAPTER2

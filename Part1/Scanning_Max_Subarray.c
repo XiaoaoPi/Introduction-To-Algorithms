@@ -1,4 +1,4 @@
-#include "Chapter2.h"
+#include "Part1.h"
 Subarray * Scanning_Max_Subarray(int *A, int length)
 {
 	Subarray * max_subarray = (Subarray *)malloc(sizeof(Subarray));	
