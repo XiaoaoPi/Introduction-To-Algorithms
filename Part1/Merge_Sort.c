@@ -4,7 +4,7 @@ void Merge_Sort(int *A, int start, int end){
 		int mid = (start + end)/2;
 		Merge_Sort(A, start, mid);
 		Merge_Sort(A, mid + 1, end);
-		Merge(A, start, mid, end);	//pass mid to avoid redundent calculation
+		Merge2(A, start, mid, end);	//pass mid to avoid redundent calculation
 	}
 }
 

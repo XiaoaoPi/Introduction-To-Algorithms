@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include <limits.h>
 #define OVERFLOW -1
-#define LINELENGTH 5
+#define LINELENGTH 15
+#define SENTINEL 30000
 #define Exchange(a,b,tmp) (tmp = b, b = a, a = tmp)
 
 /////////////////////////
@@ -27,6 +28,9 @@ typedef struct HeapHead
 /////////////////////////////
 //Declaration of Functions //
 /////////////////////////////
+/*random*/
+void Generate_Array(int *A, int length, int low, int high);
+int Rand_In_Range(int low, int high);
 
 int Binary_Sort(int *A, int start, int end, int key);
 Subarray * Brute_Force_Maximum_Subarray(int *A, int length);
